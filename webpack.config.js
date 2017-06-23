@@ -1,25 +1,20 @@
 const path = require('path')
 
 module.exports = {
-  entry: './docs/entry.js',
+	entry: './src/index.js',
 
-  output: {
-    filename: 'bundle.js',
-    path: path.join(__dirname, 'docs')
-  },
+	output: {
+		filename: 'bundle.js',
+		path: path.join(__dirname, 'dist'),
+	},
 
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: 'babel-loader'
-      }
-    ]
-  },
-
-  devServer: {
-    contentBase: 'docs/',
-    historyApiFallback: true
-  }
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: 'babel-loader',
+			},
+		],
+	},
 }
