@@ -1,34 +1,21 @@
 # styled-system
 
-Design system utilities for styled-components, glamorous, and other css-in-js libraries
-
-[![Build Status](https://travis-ci.org/jxnblk/styled-system.svg?branch=master)](https://travis-ci.org/jxnblk/styled-system)
-
-```sh
-npm i styled-system
-```
+Design system utilities for css-in-js libraries
 
 ## Usage
 
 ```jsx
-// With styled-components
-import styled from 'styled-components'
-import { space, width, fontSize, color } from 'styled-system'
+import { space, width, fontSize, color } from 'basic-styled-system'
 
-const Box = styled.div`
-  ${space}
-  ${width}
-  ${fontSize}
-  ${color}
-`
-```
-
-```jsx
-// Or with glamorous
-import glamorous from 'glamorous'
-import { space, width, fontSize, color } from 'styled-system'
-
-const Box = glamorous.div(space, width, fontSize, color)
+const Box = props => {
+  const styles = {
+    ...space(props),
+    ...width(props),
+    ...fontSize(props),
+    ...color(props)
+  }
+  return <div style={styles}>{props.children}</div>
+}
 ```
 
 ```jsx
@@ -151,6 +138,8 @@ All props accept arrays as values for mobile-first responsive styles.
 ```
 
 ## Breakpoints
+
+@TODO This is currently broken with the styles object
 
 styled-system uses a mobile-first responsive approach,
 where any value set works from that breakpoint and wider.
