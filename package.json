@@ -32,7 +32,7 @@
     "react-live": "^1.6.1",
     "react-test-renderer": "^15.5.4",
     "react-x-ray": "^1.0.0-2",
-    "webpack": "^2.6.1",
+    "webpack": "^5.104.0",
     "webpack-dev-server": "^5.2.1"
   },
   "dependencies": {}
