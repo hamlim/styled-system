@@ -3169,12 +3169,6 @@ randomatic@^3.0.0:
     kind-of "^6.0.0"
     math-random "^1.0.1"
 
-randombytes@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
-  dependencies:
-    safe-buffer "^5.1.0"
-
 range-parser@^1.2.1, range-parser@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
@@ -3410,7 +3404,7 @@ safe-buffer@5.2.1, safe-buffer@>=5.1.0, safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
 
-safe-buffer@^5.1.0, safe-buffer@~5.1.0:
+safe-buffer@~5.1.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
@@ -3473,12 +3467,6 @@ serialize-error@^7.0.1:
   resolved "https://registry.yarnpkg.com/serialize-error/-/serialize-error-7.0.1.tgz#f1360b0447f61ffb483ec4157c737fab7d778e18"
   dependencies:
     type-fest "^0.13.1"
-
-serialize-javascript@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-6.0.2.tgz#defa1e055c83bf6d59ea805d8da862254eb6a6c2"
-  dependencies:
-    randombytes "^2.1.0"
 
 serve-index@^1.9.1:
   version "1.9.1"
@@ -3805,13 +3793,12 @@ temp-dir@^3.0.0:
   resolved "https://registry.yarnpkg.com/temp-dir/-/temp-dir-3.0.0.tgz#7f147b42ee41234cc6ba3138cd8e8aa2302acffa"
 
 terser-webpack-plugin@^5.3.16:
-  version "5.3.16"
-  resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-5.3.16.tgz#741e448cc3f93d8026ebe4f7ef9e4afacfd56330"
+  version "5.3.17"
+  resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-5.3.17.tgz#75ea98876297fbb190d2fbb395e982582b859a67"
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.25"
     jest-worker "^27.4.5"
     schema-utils "^4.3.0"
-    serialize-javascript "^6.0.2"
     terser "^5.31.1"
 
 terser@^5.31.1:
